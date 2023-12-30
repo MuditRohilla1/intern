@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    position: static;
+    height: 4rem;
+    width: 100%;
+    border: 2px black solid;
+    background-color: #333;
+    display: flex;
+    /* border: red solid 2px; */
+}
+
+.container1{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    padding: 8px;
+    /* border: 2px solid red; */
+}
+
+.navbar .container1 .logo{
+    font-size: 27px;
+    color: red;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* border: 2px solid red; */
+}
+
+.nav-list ul li{
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.nav-list ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+
+.nav-list > ul >li > a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.nav-list ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-list > ul >li > a::before{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    right: 0%;
+    top: -3px;
+    transition: 0.5s;
+}
+
+.nav-list ul li a:hover::before{
+    width: 100%;
+}
+
+/* When the screen is less than 900 pixels wide, show the hamburger menu icon instead of the logo and hide the navbar */
+.container2{
+    /* border: 2px yellow solid; */
+    width: 30%;
+}
+.navbar .container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar .login a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.login div{
+    display: inline;
+    /* height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    /* padding: 5px; */
+    /* border-radius: 45%; */
+}
+
+.container2 .login i{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.center-page
+{
+    height: 100vh;
+    width: 100%;
+    background: url(/img/loki.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.detail{
+    /* border: 2px solid red; */
+    height: 30px;
+    width: 100px;
+}
+
+.shows{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+    margin-left: 70px;
+    /* border: 2px solid red; */
+    min-height: 40px;
+    max-width: 350px;
+    color: white;
+}
+.shows h2{
+    font-size: 90px;
+    color: green;
+}
+
+.shows h3{
+    font-size: 70px;
+    color: darkgray;
+}
+
+.shows p{
+    text-align: left;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 40px;
+}
+
+.play
+{
+    /* border: 1px white solid; */
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.info{
+    /* border: 1px black solid; */
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.play, .info i{
+    font-size: 20px;
+}
+
+.others{
+    background-color: #333;
+    height: 50vh;
+}
+.others h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    /* border: 2px solid black; */
+}
+
+.box{
+    height: 130px;
+    width: 230px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.box img{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    gap: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px gray;
+}
+
+.footer{
+    background-color: #333;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0,
+    0, 0, 0.7));
+    padding: 10px;
+}
+.footer h3{
+    color: white;
+    font-size: 20px;
+}

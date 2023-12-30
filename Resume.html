@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudit's Resume</title>
+    <link rel="stylesheet" href="css/last.css">
+    <script src="https://kit.fontawesome.com/6fe5a7db0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span style="color: red;">M</span>UDIT <br> <span style="color: red;">R</span>OHILLA</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span class="auto-type" style="color: red;"></span><br>From Gurgaon</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ------------ABOUT ME ---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="img-card" src="img/picture.jpg" alt="">
+                    <div class="bio">
+                        <h1>Mudit</h1>
+                        <p>Hello There!!</p>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p style="text-align: justify;">"Highly motivated computer science student with a passion for coding and software development. Proficient in programming
+                        languages such as Java, Python, and C++. Experienced in software development methodologies and agile project management. 
+                        Seeking an internship opportunity to apply and expand my technical skills in a professional setting."</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('tab-1')">{Soft-Skills}</p>
+                            <p class="tab-links" onclick="opentab('tab-2')">{Certificates}</p>
+                            <p class="tab-links" onclick="opentab('tab-3')">{Education}</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="tab-1">
+                            <ul>
+                                <li>Strong communication</li>
+                                <li>Interpersonal skills</li>
+                                <li>confident</li>
+                                <li>Proficient in the use of Information technology</li>
+                                <li>Project Management</li>
+                                <li>Learning</li>
+                                <li>Problem solving</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="tab-2">
+                            <ul>
+                                <li>Blockchain Essentials and Development of DApps</li>
+                                <li>Problem Solving Through Programming in C</li>
+                                <li>Academic Paper Writing and IPR</li>
+                                <li>Learning and problem solving</li>
+                                <li>Time Management and Ways Of Thinking</li>
+                                <li>Ethics and Gender Equality</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="tab-3">
+                            <ul>
+                                <li><span>09/2021 - Present</span><br>B.E Computer Science, Chandigarh University</li>
+                                <li><span>2020-2021</span><br>High School, Vivekanand Global School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------skills---------- -->
+
+
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">[Skills]</h1>
+        <div class="skills-list">
+
+            <div>
+                <img src="img/C.png" alt="">
+                <h2>C programming language</h2>
+            </div>
+
+            <div>
+                <img src="img/C++.png" alt="">
+                <h2>C++ programming language</h2>
+            </div>
+
+            <div>
+                <img src="img/JavaCupLogo800x800.png" alt="">
+                <h2>JAVA programming language</h2>
+            </div>
+
+            <div>
+                <img src="imG/PYTHON.png" alt="">
+                <h2>PYTHON programming language</h2>
+            </div>
+
+            <div>
+                <img src="imG/HTML.png" alt="">
+                <h2>HTML programming language</h2>
+            </div>
+
+            <div>
+                <img src="img/CSS.png" alt="">
+                <h2>CSS programming language</h2>
+            </div>
+
+            <div>
+                <img src="img/DS.jpg" alt="">
+                <h2>Data Structures and Alogorithms</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- -----------projects--------- -->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">[My Projects]</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="img/home-automation.jpg" alt="">
+                <div class="layer">
+                    <h3>Research Paper on Home Automation</h3>
+                    <p>The main purpose of home automation is to provide ease to people to control different home appliances.</p>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img src="img/gym.jpg" alt="">
+                <div class="layer">
+                    <h3>Gym Membership Website</h3>
+                    <p>Having a website for your fitness center is a great way to reach people who may not know about you.</p>
+                    <a href="#"><i class="fa-solid fa-dumbbell"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/portfolio.jpg" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A portfolio website is a collection of a professional's best work, which can be shared with potential clients, employers, or collaborators. </p>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- -----contacts--------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me...</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rohillamudit679@gmail.com</p>
+                <p><i style="color: green;" class="fa-solid fa-phone"></i> +91 8810582388</p>
+                <div class="social-icons">
+                    <a href="mailto:rohillamudit679@gmail.com" target="_blank" id="mail"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/mudit_rohilla/" target="_blank" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mudit-rohilla-43a031232/" target="_blank" id="link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MuditRohilla1" target="_blank" id="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="img/MUDIT's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>copyright &#169 || Mudit Rohilla || Since 2023</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.auto-type', {
+    strings: ['Mudit','a Cse Student', 'a Developer'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+    });
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFbgFAMpygtPyKQYe9tETQT-WqrICQxknQCuGZP2mID_sUvO9Nv2ZKuzFHO5FuURlQPQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Submitted Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
